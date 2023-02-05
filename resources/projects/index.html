@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://systemc.org/resources/projects/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+<title>systemc.org</title>
+
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../../stylesheets/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+<a class="navbar-brand" href="/"><img src="/images/systemc.png" alt="Logo" style="width:140px;"></a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Overview <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../overview/systemc/" class="dropdown-item">SystemC</a>
+</li>
+                                    
+<li>
+    <a href="../../overview/systemc-tlm/" class="dropdown-item">SystemC TLM</a>
+</li>
+                                    
+<li>
+    <a href="../../overview/systemc-ams/" class="dropdown-item">SystemC AMS</a>
+</li>
+                                    
+<li>
+    <a href="../../overview/systemc-cci/" class="dropdown-item">SystemC CCI</a>
+</li>
+                                    
+<li>
+    <a href="../../overview/systemc-verification/" class="dropdown-item">SystemC Verification</a>
+</li>
+                                    
+<li>
+    <a href="../../overview/systemc-scp/" class="dropdown-item">SystemC Common Practices (SCP)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../events/scevents/" class="dropdown-item">SystemC Evolution Events</a>
+</li>
+                                    
+<li>
+    <a href="../../events/scef202209/" class="dropdown-item">SystemC Evolution Fika - September 2022</a>
+</li>
+                                    
+<li>
+    <a href="../../events/scef202204/" class="dropdown-item">SystemC Evolution Fika - April 2022</a>
+</li>
+                                    
+<li>
+    <a href="../../events/scef202106/" class="dropdown-item">SystemC Evolution Fika - June 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../events/scef202103/" class="dropdown-item">SystemC Evolution Fika - March 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../events/sced2022/" class="dropdown-item">SystemC Evolution Day 2022</a>
+</li>
+                                    
+<li>
+    <a href="../../events/sced2021/" class="dropdown-item">SystemC Evolution Day 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../events/sced2020/" class="dropdown-item">SystemC Evolution Day 2020</a>
+</li>
+                                    
+<li>
+    <a href="../../events/sced2019/" class="dropdown-item">SystemC Evolution Day 2019</a>
+</li>
+                                    
+<li>
+    <a href="../../events/sced2018/" class="dropdown-item">SystemC Evolution Day 2018</a>
+</li>
+                                    
+<li>
+    <a href="../../events/sced2017/" class="dropdown-item">SystemC Evolution Day 2017</a>
+</li>
+                                    
+<li>
+    <a href="../../events/sced2016/" class="dropdown-item">SystemC Evolution Day 2016</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../books/" class="dropdown-item">Books</a>
+</li>
+                                    
+<li>
+    <a href="https://forums.accellera.org/forum/9-systemc/" class="dropdown-item">Discussion forum</a>
+</li>
+                                    
+<li>
+    <a href="../education/" class="dropdown-item">Education</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Libraries & Projects</a>
+</li>
+                                    
+<li>
+    <a href="../publications/" class="dropdown-item">Open Access Publications</a>
+</li>
+                                    
+<li>
+    <a href="../standards/" class="dropdown-item">Standards & Implementations</a>
+</li>
+                                    
+<li>
+    <a href="../tools/" class="dropdown-item">Tools</a>
+</li>
+                                    
+<li>
+    <a href="../training/" class="dropdown-item">Training</a>
+</li>
+                                    
+<li>
+    <a href="../videos/" class="dropdown-item">Videos</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://www.edaplayground.com/x/56Q4" class="nav-link">Playground</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../get-involved/" class="nav-link">Get Involved</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+    <li class="nav-item">
+        <a href="https://github.com/accellera-official/" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
+    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+<div class="col-md-9" role="main">
+
+<h1 id="systemc-libraries-projects">SystemC Libraries &amp; Projects</h1>
+<p>This page gives an overview of open-source SystemC libraries and projects.
+Please <a href="https://github.com/accellera-official/systemc.org/issues">let us know</a> if a project or library is missing or needs update.</p>
+<p><br></p>
+<h2 id="models">Models</h2>
+<p>This is a list of SystemC models for use in virtual platforms:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Description</th>
+<th align="left">License</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/nvdla/vp">NVIDIA Deep Learning Accelerator (NVDLA)</a></td>
+<td align="left">SystemC TLM2.0-compatible virtual platform</td>
+<td align="left">NVIDIA Open NVDLA License and Agreement v1.0</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/hsa-ees/paranut">ParaNut Processor</a></td>
+<td align="left">Customizable, highly scalable, and RISC-V compatible processor architecture for FPGA-based systems</td>
+<td align="left">BSD-2-Clause</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/machineware-gmbh/vcml/tree/main/src/vcml/models">Virtual Components Modeling Library (VCML) Models</a></td>
+<td align="left">The VCML productivity library contains many component models (ARM, RISC-V, Virtio, ...)</td>
+<td align="left">Apache-2.0</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/aut0/vcml-nvdla">Virtual Components Modeling Library (VCML) NVDLA Model</a></td>
+<td align="left">VCML integration of the NVDLA model</td>
+<td align="left">Apache-2.0</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/VP-Vibes/VPV-Peripherals">VPV-Peripherals</a></td>
+<td align="left">Library of example SystemC/TLM peripherals for various SoCs based on the SCC library</td>
+<td align="left">Apache-2.0</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h2 id="productivity-and-utility-libraries">Productivity and Utility Libraries</h2>
+<p>The Productivity and utility libraries contain common resources, building blocks, and utilities that can be used for creation of SystemC-based virtual platforms, supporting different use cases such as software development, Architecture exploration, and High-Level Synthesis. </p>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Description</th>
+<th align="left">License</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://hlslibs.org/">High-Level Synthesis Libs (HLSLibs)</a></td>
+<td align="left">Repository for the unlimited length integer and fixed-point AC types usable with SystemC, plus math, DSP and ML building blocks, as well as SystemC MatchLib</td>
+<td align="left">Apache-2.0</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/Minres/SystemC-Components">SystemC-Components (SCC)</a></td>
+<td align="left">A light weight productivity library for SystemC and TLM 2.0 based modeling tasks using C++11 provides common functions, components and modules often needed in SystemC based models</td>
+<td align="left">Apache-2.0</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/machineware-gmbh/vcml">Virtual Components Modeling Library (VCML)</a></td>
+<td align="left">Sockets, Tracing, Registers, GDB server, Logging, Session Protocol, Component Models, Network backends, TLM2.0 protocols</td>
+<td align="left">Apache-2.0</td>
+</tr>
+<tr>
+<td align="left"><a href="https://gitlab.com/moy/sc-during">sc-during</a></td>
+<td align="left">Parallel programming on top of SystemC/TLM</td>
+<td align="left">LGPLv2.1</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h2 id="virtual-platforms-and-virtual-prototypes">Virtual Platforms and Virtual Prototypes</h2>
+<p>This is a list of open-source Virtual Platforms and Virtual Prototypes (VPs):</p>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Description</th>
+<th align="left">OS / Workloads</th>
+<th align="left">License</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/agra-uni-bremen/symex-vp">SymEx-VP</a></td>
+<td align="left">A concolic testing framework for RISC-V embedded software with support for SystemC peripherals.</td>
+<td align="left">RIOT, Zephyr, NuttX, Zig</td>
+<td align="left">GPLv3</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/aut0/avp64">ARMv8 Virtual Platform (AVP64)</a></td>
+<td align="left">OCX QEMU-based ARMv8 multi-core VP</td>
+<td align="left">CoreMark, Dhrystone, Linux, Xen hypervisor</td>
+<td align="left">MIT</td>
+</tr>
+<tr>
+<td align="left"><a href="https://git.greensocs.com/platforms/greensocs-cortex-a53">GreenSocs A53 VP</a></td>
+<td align="left">ARM Cortex A53 multi-core VP (registration required)</td>
+<td align="left">Linux</td>
+<td align="left">GPLv2</td>
+</tr>
+<tr>
+<td align="left"><a href="https://git.greensocs.com/platforms/greensocs-neoverse-n1">GreenSocs N1 VP</a></td>
+<td align="left">ARM Neoverse N1 multi-core VP (registration required)</td>
+<td align="left">Linux</td>
+<td align="left">GPLv2</td>
+</tr>
+<tr>
+<td align="left"><a href="https://git.greensocs.com/platforms/greensocs-riscv64">GreenSocs RISC-V64 VP</a></td>
+<td align="left">64-bit RISC-V multi-core VP (registration required)</td>
+<td align="left">Linux</td>
+<td align="left">GPLv2</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/Minres/HIFIVE1-VP">HIFIVE1-VP</a></td>
+<td align="left">DBT-RISE-based RISC-V VP</td>
+<td align="left">FreeRTOS</td>
+<td align="left">BSD-3-Clause</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/janweinstock/or1kmvp">OpenRISC 1000 Multicore VP (OR1KMVP)</a></td>
+<td align="left">OR1KISS-based multi-core OpenRISC1000 VP</td>
+<td align="left">Linux</td>
+<td align="left">Apache-2.0</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/Minres/TGC-VP">TGC-VP</a></td>
+<td align="left">The Scale4Edge ecosystem RISC-V VP</td>
+<td align="left">FreeRTOS</td>
+<td align="left">Apache-2.0</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/Xilinx/systemctlm-cosim-demo">Xilinx Zynq-7000</a></td>
+<td align="left">QEMU based Xilinx Zynq-7000 SoC connected SystemC TLM 2.0</td>
+<td align="left"></td>
+<td align="left">MIT</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h2 id="compilers-parsers-and-source-to-source-transformations">Compilers, parsers, and source-to-source transformations</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Description</th>
+<th align="left">License</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="http://www.cecs.uci.edu/~doemer/risc.html">Recoding Infrastructure for SystemC (RISC)</a></td>
+<td align="left">Framework for analysis and agressive parallel simulation of embedded system models described in SystemC</td>
+<td align="left">BSD-3-Clause</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/intel/systemc-compiler">SystemC compiler</a></td>
+<td align="left">Compiler which translates synthesizable SystemC design to synthesizable SystemVerilog design</td>
+<td align="left">Apache-2.0</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/verilator/verilator">Verilator</a></td>
+<td align="left">Compiler and simulator which translates Verilog/SystemVerilog to SystemC</td>
+<td align="left">LGPLv3</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/anikau31/systemc-clang">systemc-clang</a></td>
+<td align="left">Static analysis framework for RTL and TLM SystemC models including a HDL synthesis plugin that generates Verilog</td>
+<td align="left">systemc-clang</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h2 id="simulators">Simulators</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Description</th>
+<th align="left">License</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/accellera-official/systemc">SystemC</a></td>
+<td align="left">SystemC Reference Implementation</td>
+<td align="left">Apache-2.0</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.coseda-tech.com/systemc-ams-proof-of-concept">SystemC-AMS</a></td>
+<td align="left">SystemC-AMS Proof-of-concept implementation</td>
+<td align="left">Apache-2.0</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h2 id="python-integration">Python Integration</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Description</th>
+<th align="left">License</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/accellera-official/PySysC">PySysC</a></td>
+<td align="left">A Python package to make SystemC usable from Python. It supports composition of a SystemC/TLM model as well as running the simulation.</td>
+<td align="left">Apache-2.0</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h2 id="verification">Verification</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Description</th>
+<th align="left">License</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://verificationacademy.com/topics/verification-methodology/uvm-connect">UVM-Connect</a></td>
+<td align="left">UVM-based library that provides TLM1 and TLM2 connectivity and object passing between SystemC and SystemVerilog UVM models and components</td>
+<td align="left">Apache-2.0</td>
+</tr>
+<tr>
+<td align="left"><a href="https://forums.accellera.org/files/file/65-uvm-ml-open-architecture/">UVM-ML</a></td>
+<td align="left">Universal Verification Methodology Multi-Language (UVM-ML) Open Architecture supporting UVM-SV, UVM-e, and UVM-SC</td>
+<td align="left">Apache-2.0</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.accellera.org/images/downloads/standards/systemc/uvm-systemc-1.0-beta4.tar.gz">UVM-SystemC</a></td>
+<td align="left">Accellera implementation and standard of the Universal Verification Methodology (UVM) in SystemC</td>
+<td align="left">Apache-2.0</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/agra-uni-bremen/crave">CRAVE</a></td>
+<td align="left">Constrained RAndom Verification Environment<br><em>NOTE: Join Accellera to get access to the latest version of this library</em></td>
+<td align="left">MIT</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/amiq-consulting/fc4sc">FC4SC</a></td>
+<td align="left">Functional Coverage for SystemC<br><em>NOTE: Join Accellera to get access to the latest version of this library</em></td>
+<td align="left">Apache-2.0</td>
+</tr>
+</tbody>
+</table></div>
+<div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#systemc-libraries-projects" class="nav-link">SystemC Libraries &amp; Projects</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#models" class="nav-link">Models</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#productivity-and-utility-libraries" class="nav-link">Productivity and Utility Libraries</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#virtual-platforms-and-virtual-prototypes" class="nav-link">Virtual Platforms and Virtual Prototypes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#compilers-parsers-and-source-to-source-transformations" class="nav-link">Compilers, parsers, and source-to-source transformations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#simulators" class="nav-link">Simulators</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#python-integration" class="nav-link">Python Integration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#verification" class="nav-link">Verification</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" style="text-align: left;">&copy; 2022 <a href="https://accellera.org/" target="_blank">Accellera Systems Initiative</a></div>
+        <div class="col-md-4" style="text-align: center;"><a href="https://github.com/accellera-official/systemc.org" target="_blank">Contribute</a></div>
+        <div class="col-md-4" style="text-align: right;">
+            <a href="/privacy/">Privacy Policy</a>
+        </div>
+    </div>
+</div>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
