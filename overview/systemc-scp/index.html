@@ -13,13 +13,10 @@
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <link href="../../stylesheets/extra.css" rel="stylesheet">
-
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
     </head>
 
     <body>
@@ -72,7 +69,35 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../events/scevents/" class="dropdown-item">SystemC Evolution Events</a>
+    <a href="../../events/scevents/" class="dropdown-item">SystemC Events & History</a>
+</li>
+                                    
+<li>
+    <a href="../../events/cfp/" class="dropdown-item">SystemC Call for Presentations</a>
+</li>
+                                    
+<li>
+    <a href="../../events/scef202604/" class="dropdown-item">SystemC Evolution Fika - April 2026</a>
+</li>
+                                    
+<li>
+    <a href="../../events/scef202506/" class="dropdown-item">SystemC Evolution Fika - June 2025</a>
+</li>
+                                    
+<li>
+    <a href="../../events/scef202503/" class="dropdown-item">SystemC Evolution Fika - March 2025</a>
+</li>
+                                    
+<li>
+    <a href="../../events/scef202405/" class="dropdown-item">SystemC Evolution Fika - May 2024</a>
+</li>
+                                    
+<li>
+    <a href="../../events/scef202402/" class="dropdown-item">SystemC Evolution Fika - February 2024</a>
+</li>
+                                    
+<li>
+    <a href="../../events/scef202309/" class="dropdown-item">SystemC Evolution Fika - September 2023</a>
 </li>
                                     
 <li>
@@ -89,6 +114,22 @@
                                     
 <li>
     <a href="../../events/scef202103/" class="dropdown-item">SystemC Evolution Fika - March 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../events/sced2026/" class="dropdown-item">SystemC Evolution Day 2025</a>
+</li>
+                                    
+<li>
+    <a href="../../events/sced2025/" class="dropdown-item">SystemC Evolution Day 2025</a>
+</li>
+                                    
+<li>
+    <a href="../../events/sced2024/" class="dropdown-item">SystemC Evolution Day 2024</a>
+</li>
+                                    
+<li>
+    <a href="../../events/sced2023/" class="dropdown-item">SystemC Evolution Day 2023</a>
 </li>
                                     
 <li>
@@ -176,7 +217,7 @@
                             </a>
                         </li>
     <li class="nav-item">
-        <a href="https://github.com/accellera-official/" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
+        <a href="https://github.com/accellera-official/" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
     </li>
                     </ul>
                 </div>
@@ -193,6 +234,28 @@
 <p>The emphasis is to show how the other SystemC standards can best be used, and provide a common set of basic components.</p>
 <p>Each component in the SCP project can be used individually, or they may be used together. The intention is that all components are interoperable and work on standard SystemC simulators.</p>
 <p>The Accellera SCP working group meets regularly and the SCP project is updated frequently with new contributions. If you have some code you think others would find useful, please be in touch!</p>
+<p>Current components include:</p>
+<ul>
+<li>TLM Extensions <ul>
+<li>A growing list of extensions from which to build specific bus features, or debug and tracing features</li>
+</ul>
+</li>
+<li>Report and logging<ul>
+<li>Enables logging using the <a href="https://github.com/gabime/spdlog">SPDLOG library</a></li>
+<li>Flexible colouring and formatting options</li>
+<li>Thread safe</li>
+<li>captures SC_REPORT as well as providing a convenient streaming interface.</li>
+<li>Streaming interface is extremely efficient</li>
+</ul>
+</li>
+</ul>
+<p>We have plans to extend the extension interface and also</p>
+<ul>
+<li>Extend list of extensions to cover more bus types (including cache coherency and self-discovery type busses)</li>
+<li>Register implementation</li>
+<li>Synchronisation library that supports multi-threading</li>
+<li>RPC transport for both TLM and Signal interfaces to connect multi-process simulation.</li>
+</ul>
 <p><img style="width:90%" src="/images/systemc-scp-layers.svg"></p>
 <h2 id="resources">Resources</h2>
 <ul>
@@ -206,7 +269,7 @@
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
         <ul class="nav flex-column">
             
             <li class="nav-item" data-level="1"><a href="#systemc-common-practices-scp" class="nav-link">SystemC Common Practices (SCP)</a>
@@ -228,7 +291,7 @@
 <hr>
 <div class="container">
     <div class="row">
-        <div class="col-md-4" style="text-align: left;">&copy; 2022 <a href="https://accellera.org/" target="_blank">Accellera Systems Initiative</a></div>
+        <div class="col-md-4" style="text-align: left;">&copy; <a href="https://accellera.org/" target="_blank">Accellera Systems Initiative</a></div>
         <div class="col-md-4" style="text-align: center;"><a href="https://github.com/accellera-official/systemc.org" target="_blank">Contribute</a></div>
         <div class="col-md-4" style="text-align: right;">
             <a href="/privacy/">Privacy Policy</a>
@@ -236,12 +299,14 @@
     </div>
 </div>
         </footer>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
         <script>
             var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

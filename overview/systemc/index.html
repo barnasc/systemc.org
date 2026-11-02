@@ -13,13 +13,10 @@
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
         <link href="../../stylesheets/extra.css" rel="stylesheet">
-
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
     </head>
 
     <body>
@@ -72,7 +69,35 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../events/scevents/" class="dropdown-item">SystemC Evolution Events</a>
+    <a href="../../events/scevents/" class="dropdown-item">SystemC Events & History</a>
+</li>
+                                    
+<li>
+    <a href="../../events/cfp/" class="dropdown-item">SystemC Call for Presentations</a>
+</li>
+                                    
+<li>
+    <a href="../../events/scef202604/" class="dropdown-item">SystemC Evolution Fika - April 2026</a>
+</li>
+                                    
+<li>
+    <a href="../../events/scef202506/" class="dropdown-item">SystemC Evolution Fika - June 2025</a>
+</li>
+                                    
+<li>
+    <a href="../../events/scef202503/" class="dropdown-item">SystemC Evolution Fika - March 2025</a>
+</li>
+                                    
+<li>
+    <a href="../../events/scef202405/" class="dropdown-item">SystemC Evolution Fika - May 2024</a>
+</li>
+                                    
+<li>
+    <a href="../../events/scef202402/" class="dropdown-item">SystemC Evolution Fika - February 2024</a>
+</li>
+                                    
+<li>
+    <a href="../../events/scef202309/" class="dropdown-item">SystemC Evolution Fika - September 2023</a>
 </li>
                                     
 <li>
@@ -89,6 +114,22 @@
                                     
 <li>
     <a href="../../events/scef202103/" class="dropdown-item">SystemC Evolution Fika - March 2021</a>
+</li>
+                                    
+<li>
+    <a href="../../events/sced2026/" class="dropdown-item">SystemC Evolution Day 2025</a>
+</li>
+                                    
+<li>
+    <a href="../../events/sced2025/" class="dropdown-item">SystemC Evolution Day 2025</a>
+</li>
+                                    
+<li>
+    <a href="../../events/sced2024/" class="dropdown-item">SystemC Evolution Day 2024</a>
+</li>
+                                    
+<li>
+    <a href="../../events/sced2023/" class="dropdown-item">SystemC Evolution Day 2023</a>
 </li>
                                     
 <li>
@@ -176,7 +217,7 @@
                             </a>
                         </li>
     <li class="nav-item">
-        <a href="https://github.com/accellera-official/" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
+        <a href="https://github.com/accellera-official/" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
     </li>
                     </ul>
                 </div>
@@ -190,7 +231,7 @@
 
 <h1 id="systemc">SystemC</h1>
 <p><strong>The language for System-level design, modeling and verification</strong></p>
-<p>SystemC™ addresses the need for a system design and verification language that spans hardware and software. It is a language built in standard C++ by extending the language with the use of class libraries. The language is particularly suited to model system's partitioning, to evaluate and verify the assignment of blocks to either hardware or software implementations, and to architect and measure the interactions between and among functional blocks. Leading companies in the intellectual property (IP), electronic design automation (EDA), semiconductor, electronic systems, and embedded software industries currently use SystemC for architectural exploration, to deliver high-performance hardware blocks at various levels of abstraction and to develop virtual platforms for hardware/software co-design. SystemC has been standardized by the Open SystemC Initiative (OSCI) and <a href="https://accellera.org">Accellera Systems Initiative</a> and ratified as <a href="https://standards.ieee.org/standard/1666-2011.html">IEEE Std. 1666™-2011</a>.</p>
+<p>SystemC™ addresses the need for a system design and verification language that spans hardware and software. It is a language built in standard C++ by extending the language with the use of class libraries. The language is particularly suited to model system's partitioning, to evaluate and verify the assignment of blocks to either hardware or software implementations, and to architect and measure the interactions between and among functional blocks. Leading companies in the intellectual property (IP), electronic design automation (EDA), semiconductor, electronic systems, and embedded software industries currently use SystemC for architectural exploration, to deliver high-performance hardware blocks at various levels of abstraction and to develop virtual platforms for hardware/software co-design. SystemC has been standardized by the Open SystemC Initiative (OSCI) and <a href="https://accellera.org">Accellera Systems Initiative</a> and ratified as <a href="https://ieeexplore.ieee.org/document/10246125">IEEE Std 1666™-2023</a>.</p>
 <p><img alt="image" src="/images/systemc-architecture.svg" /></p>
 <h2 id="why-systemc">Why SystemC?</h2>
 <p>An SoC is literally a system on a chip, consisting of both silicon and embedded software. Its design involves complex algorithm and architecture development and analysis similar to that performed in system design – a trade-off process that determines critical metrics, such as SOC performance, functionality, and power consumption.</p>
@@ -201,19 +242,25 @@
 <p>The Transaction Level Modeling standard defines interfaces for SystemC, providing an essential framework for model exchange within companies and across the IP supply chain for architecture analysis, software development and performance analysis, and hardware verification. It explicitly addresses virtual prototyping in which SystemC models can easily be exchanged and arranged within a system, enabling the optimal reuse of models and modeling effort across different use cases.</p>
 <p><a href="/overview/systemc-tlm/">More information about SystemC TLM</a></p>
 <h2 id="systemc-analogmixed-signal-ams">SystemC Analog/Mixed-Signal (AMS)</h2>
-<p>The SystemC AMS standard defined in <a href="https://standards.ieee.org/standard/1666_1-2016.html">IEEE Std. 1666.1-2016</a> introduces system-level design and modeling of embedded Analog/Mixed-Signal (AMS) systems. SystemC AMS provides unique capabilities for the design and modeling of embedded analog/mixed-signal applications at higher levels of design abstraction. The SystemC AMS extensions define a uniform and standardized modeling approach that can be used in combination with digitally-oriented ESL design methods, supporting a design refinement methodology for functional modeling, architecture exploration, and virtual prototyping of embedded analog/mixed-signal systems.</p>
+<p>The SystemC AMS standard defined in <a href="https://standards.ieee.org/standard/1666_1-2016.html">IEEE Std 1666.1-2016</a> introduces system-level design and modeling of embedded Analog/Mixed-Signal (AMS) systems. SystemC AMS provides unique capabilities for the design and modeling of embedded analog/mixed-signal applications at higher levels of design abstraction. The SystemC AMS extensions define a uniform and standardized modeling approach that can be used in combination with digitally-oriented ESL design methods, supporting a design refinement methodology for functional modeling, architecture exploration, and virtual prototyping of embedded analog/mixed-signal systems.</p>
 <p><a href="/overview/systemc-ams/">More information about SystemC AMS</a></p>
 <h2 id="systemc-configuration-control-and-inspection-cci">SystemC Configuration, Control and Inspection (CCI)</h2>
-<p>The goal of Configuration, Control and Inspection (CCI) is to improve efficiency and ROI for model creators and tool providers. They CCI standards will allow suppliers to instrument models so that a rich user experience is enabled, and they will allow industry tools to leverage this instrumentation to provide powerful debug and analysis capabilities. The CCI working group is currently defining standards for the exchange of information between SystemC models and tools.</p>
+<p>The goal of Configuration, Control and Inspection (CCI) is to improve efficiency and return-on-investment for model creators and tool providers. The CCI standards will allow suppliers to instrument models so that a rich user experience is enabled, and they will allow industry tools to leverage this instrumentation to provide powerful debug and analysis capabilities. The CCI working group has released the <a href="https://github.com/accellera-official/cci">CCI 1.0 reference implementation</a> to enable model configuration between SystemC models and tools.</p>
 <p><a href="/overview/systemc-cci/">More information about SystemC CCI</a></p>
+<h2 id="systemc-synthesis-subset-standard">SystemC Synthesis Subset Standard</h2>
+<p>The SystemC Synthesis Subset Standard defines the syntactic elements in C++ and SystemC that are appropriate for use in SystemC models intended as input for High Level Synthesis (HLS) tools. The current version of the synthesizable subset is based on ISO/IEC 14882:2003 and IEEE Std 1666-2011, and the SystemC Synthesis Working Group is now looking to incorporate changes and enhancements that result from the evolution towards C++17 and IEEE Std 1666-2023.</p>
+<p><a href="https://www.accellera.org/images/downloads/standards/systemc/SystemC_Synthesis_Subset_1_4_7.pdf">More information about the SystemC Synthesis Subset Language Reference Manual</a></p>
 <h2 id="systemc-verification-uvm-systemc-scv">SystemC Verification (UVM-SystemC, SCV)</h2>
 <p>The UVM-SystemC library provides an implementation of the Universal Verification Methodology (UVM) in SystemC. The UVM-SystemC class library enables the development of scalable and reusable verification collateral for system-level verification and testing.</p>
 <p>The SystemC Verification (SCV) library provides a common set of APIs that are used as a basis to verification activities with SystemC (generation of values under constraints, transaction recording, etc.). These APIs are implemented in all major SystemC simulators available on the market.</p>
 <p><a href="/overview/systemc-verification/">More information about SystemC Verification</a></p>
 <h2 id="resources">Resources</h2>
 <ul>
-<li><a href="https://accellera.org">Download SystemC/TLM standard, IEEE 1666-2011</a> </li>
+<li><a href="https://ieeexplore.ieee.org/document/10246125">Download SystemC/TLM standard, IEEE 1666-2023</a> </li>
+<li><a href="https://standards.ieee.org/standard/1666_1-2016.html">Download SystemC AMS extensions standard, IEEE 1666.1-2016</a></li>
+<li><a href="https://www.accellera.org/images/downloads/standards/systemc/SystemC_Synthesis_Subset_1_4_7.pdf">SystemC Synthesis Subset Language Reference Manual, version 1.4.7</a></li>
 <li><a href="https://github.com/accellera-official/systemc">SystemC/TLM reference implementation on GitHub</a></li>
+<li><a href="https://workspace.accellera.org/document/dl/12212">SystemC Standards Update, December 2023</a></li>
 </ul></div>
 <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
     <div class="navbar-header">
@@ -223,7 +270,7 @@
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
         <ul class="nav flex-column">
             
             <li class="nav-item" data-level="1"><a href="#systemc" class="nav-link">SystemC</a>
@@ -241,6 +288,10 @@
               </ul>
             </li>
             <li class="nav-item" data-level="2"><a href="#systemc-configuration-control-and-inspection-cci" class="nav-link">SystemC Configuration, Control and Inspection (CCI)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#systemc-synthesis-subset-standard" class="nav-link">SystemC Synthesis Subset Standard</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -265,7 +316,7 @@
 <hr>
 <div class="container">
     <div class="row">
-        <div class="col-md-4" style="text-align: left;">&copy; 2022 <a href="https://accellera.org/" target="_blank">Accellera Systems Initiative</a></div>
+        <div class="col-md-4" style="text-align: left;">&copy; <a href="https://accellera.org/" target="_blank">Accellera Systems Initiative</a></div>
         <div class="col-md-4" style="text-align: center;"><a href="https://github.com/accellera-official/systemc.org" target="_blank">Contribute</a></div>
         <div class="col-md-4" style="text-align: right;">
             <a href="/privacy/">Privacy Policy</a>
@@ -273,12 +324,14 @@
     </div>
 </div>
         </footer>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
         <script>
             var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
